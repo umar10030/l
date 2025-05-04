@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>click the button</p>
+<button onclick="ascending()">ascending oder</button>
+<button onclick="descending()">descending oder</button>
+<p id="result"></p>
+<script>
+    var points = [ 20, 40, 50, 60, 70, 90, 100];
+    document .getElementById("result").innerHTML = points;
+    function ascending(){
+        points.sort(function(a, b){return a-b});
+        document.getElementById("result").innerHTML = points;
+    }
+    function descending(){
+        points.sort(function(a, b){return b-a});
+        document.getElementById("result").innerHTML = points;
+    }
+
+</script>
+
+    
+    
+</body>
+</html>

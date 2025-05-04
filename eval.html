@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>click the button</p>
+    <button onclick="myfunction()">try it</button>
+    <p id="result"></p>
+
+    <script>
+        function myfunction(){
+            var x = 10;
+            var y = 20;
+            var z = eval ("x + y");
+            var a = eval ("2 * 2");
+            var b = eval ("x + y + a + z");
+        }
+        var res = x + y + a + z;
+        document.getElementById("result").innerHTML = res;
+    </script>
+
+
+
+    
+</body>
+</html>
